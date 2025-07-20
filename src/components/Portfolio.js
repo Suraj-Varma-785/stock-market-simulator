@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Portfolio() {
+function Portfolio({ cash }) {
   return (
     <section style={{ padding: '2rem' }}>
       <h2>Your Virtual Portfolio</h2>
-      <p>Balance: $10,000</p>
-      {/* Later, you'll show stock holdings and trades here */}
+      <p>Balance: ${cash.toLocaleString()}</p>
+      {/* Holdings table will go here later */}
     </section>
   );
 }
