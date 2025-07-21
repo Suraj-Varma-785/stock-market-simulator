@@ -1,4 +1,4 @@
-const API_KEY = "JKNFLYR47L4BFUAV"; // Replace with your key
+const API_KEY = process.env.REACT_APP_ALPHA_VANTAGE_KEY;
 const BASE_URL = "https://www.alphavantage.co/query?";
 
 export async function fetchStockQuote(symbol) {
